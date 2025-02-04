@@ -1,0 +1,237 @@
+#section1 {
+  transition: all 0.5s ease-in-out;
+  height: 100vh;
+}
+
+/* sec1 */
+.sec1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+/* title setting */
+.title {
+  position: relative;
+  z-index: 1000;
+  font-size: 8vw;
+  font-family: "Abel";
+  line-height: 8vw;
+  text-align: center;
+  padding-right: 15vw;
+  letter-spacing: -2px;
+}
+.title_strong {
+  display: block;
+  font-family: "Bedini-Bold-Italic";
+  font-style: italic;
+  padding-left: 32vw;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.title_span {
+  position: absolute;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1vw;
+  right: 25%;
+  top: 20%;
+}
+
+.title_hover_text {
+  top: 60%;
+  left: 20%;
+}
+
+/* img box layout and common style */
+.sec1_imgbox1 {
+  position: absolute;
+  left: 20%;
+  top: 0;
+  width: 13vw;
+  height: 15vw;
+}
+.sec1_imgbox2 {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  width: 20vw;
+  height: 23vw;
+}
+.sec1_imgbox3 {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 50vw;
+  height: 14.5vw;
+}
+.sec1_introimg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sec1_introimg_normal {
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
+}
+.sec1_introimg_normal_normalCircle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transform: rotate(0deg);
+  transition: 0.6s ease-in-out;
+}
+/* .sec1 .introimg.normal .normalCircle.rotate {
+  transform: rotate(45deg);
+} */
+/* js로 적용 */
+
+.sec1_introimg_beige {
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
+}
+.sec1_introimg_beige_beigeCircle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transform: rotate(-45deg);
+  transition: 0.6s 0.15s ease-in-out;
+}
+/* .sec1 .introimg.beige .beigeCircle.rotate {
+  transform: rotate(0deg);
+} */
+/* js로 적용 */
+
+.sec1_introimg_grey {
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
+}
+.sec1_introimg_grey_greyCircle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transform: rotate(-45deg);
+  transition: 0.6s 0.15s ease-in-out;
+}
+/* .sec1 .introimg.grey .greyCircle.rotate {
+  transform: rotate(0deg);
+} */
+/* js로 적용 */
+
+.sec1_introimg_mint {
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
+}
+.sec1_introimg_mint_mintCircle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transform: rotate(-45deg);
+  transition: 0.6s 0.15s ease-in-out;
+}
+/* .sec1 .introimg.mint .mintCircle.rotate {
+  transform: rotate(0deg);
+} */
+/* js로 적용 */
+
+.sec1_introimg_invisible {
+  opacity: 0;
+}
+
+.sec1_circle1 {
+  position: absolute;
+  z-index: 120;
+  left: -25%;
+  top: 75%;
+  width: 8vw;
+  height: 8vw;
+  background: rgb(236, 228, 208);
+  border-radius: 50%;
+  transition: transform 0.25s ease-in-out;
+  max-width: 700px;
+  max-height: 700px;
+}
+.sec1_circle2 {
+  position: absolute;
+  z-index: 110;
+  right: 25%;
+  top: 80%;
+  width: 8vw;
+  height: 8vw;
+  background: rgb(235, 235, 235);
+  border-radius: 50%;
+  transition: transform 0.25s ease-in-out;
+}
+
+.sec1_circle3 {
+  position: absolute;
+  z-index: 100;
+  left: 93%;
+  bottom: 2%;
+  width: 8vw;
+  height: 8vw;
+  background: rgb(230, 239, 229);
+  border-radius: 50%;
+  transition: transform 0.25s ease-in-out;
+}
+.sec1_circle1:hover {
+  transform: scale(1.1);
+}
+.sec1_circle2:hover {
+  transform: scale(1.1);
+}
+.sec1_circle3:hover {
+  transform: scale(1.1);
+}
+
+.sec1_circle1_circle1img {
+  position: absolute;
+  z-index: 1210;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  animation: spinCircle 8s infinite linear;
+}
+.sec1_circle2_circle2img {
+  position: absolute;
+  z-index: 1110;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  animation: spinCircle 8s infinite linear;
+}
+.sec1_circle3_circle3img {
+  position: absolute;
+  z-index: 1010;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  animation: spinCircle 8s infinite linear;
+}
+@keyframes spinCircle {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,83 @@
+#footer {
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+  max-height: 1000px;
+}
+
+/* footer */
+.contactWrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.contactWrap h2 {
+  font-family: "Abel";
+  font-size: 1.5vw;
+  color: #cab193;
+}
+.contactWrap strong {
+  display: block;
+  font-size: 5vw;
+  font-style: italic;
+  padding-bottom: 0.4em;
+}
+.contactWrap a {
+  color: #545454;
+  text-decoration: none;
+}
+.contactWrap a span {
+  font-size: 1.7vw;
+  font-weight: 500;
+}
+.contactWrap .bgcircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 22vw;
+  height: 22vw;
+  background: var(--beige-circle);
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+.contactWrap:hover .bgcircle {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.footer .rightLeaf {
+  /* width: 14vw; */
+  position: absolute;
+  bottom: 55%;
+  left: 56%;
+  z-index: -2;
+  transform-origin: bottom left;
+  transform: scale(0.8);
+  transition: transform 500ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
+}
+.footer .leftLeaf {
+  /* width: 14vw; */
+  position: absolute;
+  top: 55%;
+  right: 56%;
+  z-index: -2;
+  transform-origin: top right;
+  transform: scale(0.8);
+  transition: transform 500ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
+}
+
+.contactWrap:hover .rightLeaf {
+  transform: rotate(20deg) scale(1);
+}
+.contactWrap:hover .leftLeaf {
+  transform: rotate(25deg) scale(1);
+}
+.footer p {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-style: italic;
+}

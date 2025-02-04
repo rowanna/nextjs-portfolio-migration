@@ -1,0 +1,174 @@
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100000;
+  width: 100%;
+  height: 10vh;
+  max-height: 80px;
+  transition: all 0.3s ease;
+}
+#header.on {
+  position: fixed;
+  top: -15vh;
+}
+
+.header {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Abel";
+}
+.menu-btn a {
+  display: block;
+  padding: 0 2em;
+}
+.head-tit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Playfair Display";
+  font-style: italic;
+}
+.nav {
+  display: block;
+}
+.nav ul {
+  padding: 0 2em;
+}
+.nav ul li {
+  display: inline-block;
+}
+.nav ul li a {
+  display: block;
+  padding: 0 0.7em;
+  transition: all 0.3s ease;
+}
+.nav ul li a:hover {
+  color: #cab193;
+}
+.nav ul li a:active {
+  color: #111111;
+}
+/* 반응형 nav */
+.navShow {
+  display: none;
+}
+.navShow ul {
+  padding: 0 1em;
+}
+.navShow ul li {
+  display: inline-block;
+}
+.navShow ul li a {
+  display: block;
+  padding: 0 0.4em;
+  transition: all 0.3s ease;
+}
+.navShow ul li a:hover {
+  color: #cab193;
+}
+.navShow ul li a:active {
+  color: #111111;
+}
+/* 모바일 햄버거 메뉴 */
+.ham {
+  display: none;
+}
+.ham label .menu {
+  position: absolute;
+  right: -55px;
+  top: -55px;
+  z-index: 100;
+  width: 130px;
+  height: 130px;
+  background: #efe7d5;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 0 0 0 #efe7d5, 0 0 0 0 #efe7d5;
+  cursor: pointer;
+}
+.ham label .menu .hamburger {
+  position: absolute;
+  top: 85px;
+  left: 34px;
+  width: 23px;
+  height: 1px;
+  background: #545454;
+  display: block;
+  transform-origin: center;
+  transition: 0.5s ease-in-out;
+}
+.ham label .menu .hamburger::after,
+.ham label .menu .hamburger::before {
+  transition: 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 23px;
+  height: 1px;
+  background: #545454;
+}
+.ham label .menu .hamburger::before {
+  top: -6px;
+}
+.ham label .menu .hamburger::after {
+  bottom: -6px;
+}
+.ham label input {
+  display: none;
+}
+input:checked + .menu {
+  box-shadow: 0 0 0 100vw #efe7d5, 0 0 0 100vh #efe7d5;
+  border-radius: 0;
+}
+input:checked + .menu .hamburger {
+  transform: rotate(45deg);
+}
+input:checked + .menu .hamburger::after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+input:checked + .menu .hamburger::before {
+  transform: rotate(90deg);
+  top: 0;
+}
+input:checked + .menu + ul {
+  display: block;
+  animation: fadeInFromNone 0.5s forwards ease-in-out;
+}
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+.ham label ul {
+  z-index: 200;
+  position: absolute;
+  top: 350%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.25s 0s ease-in-out;
+}
+.ham label ul li a {
+  margin-bottom: 1em;
+  display: block;
+  color: #545454 !important;
+  text-decoration: none;
+}
