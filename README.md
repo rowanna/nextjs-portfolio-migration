@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rowanna's Next.js Porfolio upgrade project
 
-## Getting Started
+Welcome to my Next.js Porfolio upgrade project website repository! 🌐  
+2020년에 제작한 jQuery 포트폴리오를 Next.js로 업그레이드했습니다.
 
-First, run the development server:
+## 🔗 Live Website
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit the site here: [nextjs-portfolio-migration.vercel.app](nextjs-portfolio-migration.vercel.app)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 원 페이지 사이트이고 6개의 섹션으로 구성되어 있습니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+  - intro section
+  - info section
+  - projects section
+  - javascript section
+  - css section
+  - contact section
 
-## Learn More
+- 반응형으로 작업되었습니다.
 
-To learn more about Next.js, take a look at the following resources:
+## 💻 Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend**: Next.js 15, TypeScript
+- **Hosting**: vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🖼 Screenshots
 
-## Deploy on Vercel
+### intro section
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![intro section](./public/image-6.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### info section
+
+![info section](./public/image-5.png)
+
+### projects section
+
+![projects section](./public/image-3.png)
+![projects section](./public/image-4.png)
+
+### javascript section
+
+![javascript section](./public/image-2.png)
+
+### css section
+
+![css section](./public/image-1.png)
+
+### contact section
+
+![contact section./public/](image.png)
+
+### 반응형 작업
+
+![반응형 작업](./public/image-7.png)
+![반응형 작업](./public/image-8.png)
