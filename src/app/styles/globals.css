@@ -1,0 +1,27 @@
+:root {
+  --gray-bg: #f6f6f6;
+  --beige-bg: #f5efe1;
+  --mint-bg: #ebf4ea;
+
+  --beige-circle: #ebe3cf;
+  --mint-circle: #d7dfd4;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--gray-bg);
+  padding: 0 2px;
+}
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  background-color: var(--beige-circle);
+  border-radius: 5px;
+  padding: 0 2px;
+}
+
+body {
+  transition: background-color 0.6s ease-in-out;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

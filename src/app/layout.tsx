@@ -1,15 +1,25 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Abel, Playfair_Display } from "next/font/google";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import "the-new-css-reset/css/reset.css";
+import "@/app/styles/globals.css";
+
+const abel = Abel({
+  weight: "400",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
+  style: "italic",
+});
+const bedini = localFont({
+  src: "../public/fonts/Bedini/Bedini-Bold-Italic.ttf.woff",
+});
+
+const maruburi = localFont({
+  src: "../public/fonts/MaruBuri/MaruBuri-Regular.woff",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${playfairDisplay.className} ${bedini.className} ${maruburi.className} ${abel.className}`}
+      >
         {children}
       </body>
     </html>
