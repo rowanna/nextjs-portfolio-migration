@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Wonji Na Portfolio",
     description: "웹 퍼블리셔 나원지의 포트폴리오 사이트입니다.",
-    images: "/meta-img.jpg",
+    images: "https://nextjs-portfolio-migration.vercel.app/meta-img.jpg",
   },
 };
 
