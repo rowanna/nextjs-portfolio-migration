@@ -27,10 +27,13 @@ export const metadata: Metadata = {
   description: "next.js로 업데이트 한 jQuery 포트폴리오 입니다.",
   keywords:
     "나원지, 포트폴리오, portfolio, rowanna, 웹퍼블리셔, 웹퍼블리셔 포트폴리오",
+  icons: {
+    icon: "/img/favicon-128.jpg", // 기본 파비콘
+  },
   openGraph: {
     title: "Wonji Na Portfolio",
     description: "웹 퍼블리셔 나원지의 포트폴리오 사이트입니다.",
-    images: "/src/public/img/meta-img.jpg",
+    images: "/img/meta-img.jpg",
   },
 };
 
@@ -41,7 +44,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <link rel="icon" href="/src/public/img/favicon-128.jpg" sizes="any" />
       <body
         className={`${playfairDisplay.className} ${bedini.className} ${maruburi.className} ${abel.className}`}
       >
