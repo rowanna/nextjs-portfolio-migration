@@ -29,6 +29,8 @@ export const metadata: Metadata = {
     "나원지, 포트폴리오, portfolio, rowanna, 웹퍼블리셔, 웹퍼블리셔 포트폴리오",
   icons: {
     icon: "/favicon-128.jpg",
+    shortcut: "/favicon-128.jpg", // 다른 크기의 아이콘 추가 가능
+    apple: "/favicon-128.jpg", // 애플 디바이스 아이콘
   },
   openGraph: {
     title: "Wonji Na Portfolio",
