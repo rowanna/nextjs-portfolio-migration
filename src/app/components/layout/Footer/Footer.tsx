@@ -20,16 +20,16 @@ export default function Footer() {
               className="rightLeaf"
               src={LeftImg}
               alt="rightLeaf"
-              width={200} // 넓이를 동적으로 설정할 것이므로 0
-              height={200} // 높이를 자동 조정
+              width={200}
+              height={200}
             />
             <Image
               aria-hidden="true"
               className="leftLeaf"
               src={RightImg}
               alt="leftLeaf"
-              width={200} // 넓이를 동적으로 설정할 것이므로 0
-              height={200} // 높이를 자동 조정
+              width={200}
+              height={200}
             />
           </div>
           <p>portfolio 2020</p>

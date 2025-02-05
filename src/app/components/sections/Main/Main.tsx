@@ -290,12 +290,7 @@ export default function Main() {
                 aria-hidden="true"
               />
             </div>
-            <div
-              className={`${styles.sec1_circle3}`}
-              aria-hidden="true"
-              data-0="left: 93%; bottom: 2%; width: 8vw; height: 8vw;"
-              data-800="left: 70%; bottom: -300%; width: 15vw; height: 15vw;"
-            >
+            <div className={`${styles.sec1_circle3}`} aria-hidden="true">
               <Image
                 fill
                 src={mint}
