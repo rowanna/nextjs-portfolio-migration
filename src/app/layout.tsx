@@ -28,12 +28,12 @@ export const metadata: Metadata = {
   keywords:
     "나원지, 포트폴리오, portfolio, rowanna, 웹퍼블리셔, 웹퍼블리셔 포트폴리오",
   icons: {
-    icon: "/img/favicon-128.jpg", // 기본 파비콘
+    icon: "/favicon-128.jpg",
   },
   openGraph: {
     title: "Wonji Na Portfolio",
     description: "웹 퍼블리셔 나원지의 포트폴리오 사이트입니다.",
-    images: "/img/meta-img.jpg",
+    images: "/meta-img.jpg",
   },
 };
 
