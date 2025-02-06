@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./Main.module.css";
+import styles from "./MainSection.module.css";
 
 import intro01 from "@/public/img/intro01@1.jpg";
 import intro01_circle from "@/public/img/intro01_circle@1.png";
@@ -31,7 +31,7 @@ import intro03_grey from "@/public/img/intro03-grey@1.jpg";
 import intro03_grey_circle from "@/public/img/intro03-grey_circle@1.png";
 import mint from "@/public/img/mint.png";
 
-export default function Main() {
+export default function MainSection() {
   return (
     <>
       <section id={styles.section1}>
