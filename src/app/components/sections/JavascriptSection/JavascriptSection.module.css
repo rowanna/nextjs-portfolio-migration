@@ -1,0 +1,68 @@
+/* section6 */
+.sec6 {
+  text-transform: uppercase;
+}
+.js_cont_box {
+  display: flex;
+  transition: filter 0.6s ease-in-out;
+}
+/* js에서 클래스 추가. */
+/* .filter {
+  filter: blur(1px);
+} */
+.js_cont {
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
+}
+.js_cont_iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.js_desc_desc_tit {
+  display: flex;
+  margin-bottom: 10px;
+}
+.js_desc_desc_tit_num {
+  flex: 0 0 50%;
+  font-size: 20px;
+  margin-top: -5px;
+}
+.js_desc_desc_tit_h3 {
+  flex: 0 0 50%;
+}
+.js_desc_cta {
+  position: relative;
+  font-family: "Abel";
+  margin-left: 75%;
+}
+.js_desc_cta::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -20%;
+  z-index: -1;
+  background: var(--mint-circle);
+  border-radius: 30px;
+  width: 35px;
+  height: 35px;
+  transition: 0.3s ease;
+}
+.js_desc_cta:hover::before {
+  width: 125px;
+}
+.svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #000;
+  stroke-width: 0.5px;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+/* .js-desc a.cta:hover svg {
+  transform: translateX(0);
+} */

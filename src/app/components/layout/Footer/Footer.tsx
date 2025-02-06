@@ -8,16 +8,24 @@ export default function Footer() {
     <>
       <footer id={`${styles.footer}`}>
         <div className={`${styles.footer}`}>
-          <div className="contactWrap">
-            <h2>EMAIL ME</h2>
-            <a href="mailto:rowankimna@gmail.com">
-              <strong>rowankimna@gmail.com</strong>
+          <div className={styles.contactWrap}>
+            <h2 className={styles.contactWrap_h2}>EMAIL ME</h2>
+            <a
+              className={styles.contactWrap_a}
+              href="mailto:rowankimna@gmail.com"
+            >
+              <strong className={styles.contactWrap_strong}>
+                rowankimna@gmail.com
+              </strong>
             </a>
-            <span>CONTACT ME</span>
-            <div className="bgcircle" aria-hidden="true"></div>
+            <span className={styles.contactWrap_a_span}>CONTACT ME</span>
+            <div
+              className={styles.contactWrap_bgcircle}
+              aria-hidden="true"
+            ></div>
             <Image
               aria-hidden="true"
-              className="rightLeaf"
+              className={styles.footer_rightLeaf}
               src={LeftImg}
               alt="rightLeaf"
               width={200}
@@ -25,14 +33,14 @@ export default function Footer() {
             />
             <Image
               aria-hidden="true"
-              className="leftLeaf"
+              className={styles.footer_leftLeaf}
               src={RightImg}
               alt="leftLeaf"
               width={200}
               height={200}
             />
           </div>
-          <p>portfolio 2020</p>
+          <p className={styles.footer_p}>portfolio 2020</p>
         </div>
       </footer>
     </>

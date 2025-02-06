@@ -1,0 +1,34 @@
+{
+  "works": [
+    {
+      "id": 1,
+      "iframeSrc": "../projects/parallaxEffect/parallax01.html",
+      "title": "image slide",
+      "descURL": "https://www.notion.so/Image-Slide-38b0171e20754d8fadb05783f4c500bc"
+    },
+    {
+      "id": 2,
+      "iframeSrc": "../projects/parallaxEffect/parallax01.html",
+      "title": "parallax",
+      "descURL": "https://www.notion.so/Parallax-8d52e0e89f4d4ca6aab724b173470d3d"
+    },
+    {
+      "id": 3,
+      "iframeSrc": "../projects/mouseEffect/mouseeffect-ex.html",
+      "title": "mouse effect",
+      "descURL": "https://www.notion.so/Mouse-Effect-2a49bf2df4be4419b9788edadaa5dc86"
+    },
+    {
+      "id": 4,
+      "iframeSrc": "../projects/chromeApp/index.html",
+      "title": "chrome app",
+      "descURL": "https://www.notion.so/Chrome-App-4789018a1c5d4b4ab90d75bb150bee77"
+    },
+    {
+      "id": 5,
+      "iframeSrc": "../projects/paintJS/index.html",
+      "title": "paint brush",
+      "descURL": ""
+    }
+  ]
+}
