@@ -1,0 +1,34 @@
+{
+  "works": [
+    {
+      "id": 1,
+      "iframeSrc": "../projects/ani/tail.html",
+      "title": "TAIL ANIMATION",
+      "descURL": "https://codepen.io/rowanna/pen/xxOBVPG"
+    },
+    {
+      "id": 2,
+      "iframeSrc": "../projects/ani/3dcube.html",
+      "title": "3D CUBE ANIMATION",
+      "descURL": "https://codepen.io/rowanna/pen/MWexjPV"
+    },
+    {
+      "id": 3,
+      "iframeSrc": "../projects/ani/wave.html",
+      "title": "WAVE ANIMATION",
+      "descURL": "https://codepen.io/rowanna/pen/mdEoOjB"
+    },
+    {
+      "id": 4,
+      "iframeSrc": "../projects/ani/bar.html",
+      "title": "BAR ANIMATION",
+      "descURL": "https://codepen.io/rowanna/pen/ExyMZay"
+    },
+    {
+      "id": 5,
+      "iframeSrc": "../projects/ani/dot.html",
+      "title": "DOT ANIMATION",
+      "descURL": "https://codepen.io/rowanna/pen/QWEoKLN"
+    }
+  ]
+}

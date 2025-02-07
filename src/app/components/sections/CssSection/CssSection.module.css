@@ -30,17 +30,13 @@
 .css_contWrap_css_row1_left {
   flex: 0 0 21%;
 }
-.css_contWrap_css_row1_center {
+/* .css_contWrap_css_row1_center {
   flex: 0 0 56%;
 }
 .css_contWrap_css_row1_center_right {
   flex: 0 0 21%;
 }
-.css_contWrap_css_row2 {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 10em;
-}
+
 .css_contWrap_css_row2_left {
   flex: 0 0 36%;
 }
@@ -49,7 +45,7 @@
 }
 .css_contWrap_css_row2_right {
   flex: 0 0 36%;
-}
+} */
 
 .ani_cont {
   height: 430px;
@@ -125,10 +121,10 @@
     display: block;
     padding-bottom: 0;
   }
-  .css_contWrap_css_row2 {
+  /* .css_contWrap_css_row2 {
     display: block;
     padding-bottom: 0;
-  }
+  } */
   .ani_tit {
     padding-bottom: 5em;
   }

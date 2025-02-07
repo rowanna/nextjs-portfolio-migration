@@ -5,6 +5,7 @@ import styles from "./CssSection.module.css";
 import coming01 from "@/public/img/coming01.png";
 import coming02 from "@/public/img/coming02.png";
 import coming03 from "@/public/img/coming03.png";
+import { works } from "@/public/json/cssSectionData.json";
 
 export default function CssSection() {
   return (
@@ -15,11 +16,7 @@ export default function CssSection() {
             <span className="tit1" aria-hidden="true">
               CSS
             </span>
-            <div
-              className={styles.css_titWrap_titCircle}
-              data-bottom="margin-left: -9%;"
-              data-top="margin-left: 16%;"
-            >
+            <div className={styles.css_titWrap_titCircle}>
               <span aria-hidden="true">UNIQUE &amp; SPECIAL CSS ANIMATION</span>
             </div>
             <strong className={styles.css_titWrap_tit2} aria-hidden="true">
@@ -31,121 +28,34 @@ export default function CssSection() {
           </div>
           <div>
             <div className={styles.css_contWrap_css_row1}>
-              <div className={`${styles.css_contWrap_css_row1_left} tail`}>
-                <div className={styles.ani_cont}>
-                  <iframe
-                    className={styles.ani_cont_iframe}
-                    src="../projects/ani/tail.html"
-                    frameBorder="0"
-                    scrolling="no"
-                  ></iframe>
-                </div>
-                <div className="ani-tit">
-                  <div className={styles.tit_top}>
-                    <span className={styles.ani_tit_num}>01</span>
-                    <h3>TAIL ANIMATION</h3>
+              {works.map(({ id, title, iframeSrc, descURL }) => (
+                <div
+                  key={id}
+                  className={`${styles.css_contWrap_css_row1_left}`}
+                >
+                  <div className={styles.ani_cont}>
+                    <iframe
+                      className={styles.ani_cont_iframe}
+                      src={iframeSrc}
+                      frameBorder="0"
+                      scrolling="no"
+                    ></iframe>
                   </div>
-                  <a
-                    href="https://codepen.io/rowanna/pen/xxOBVPG"
-                    target="_blank"
-                  >
-                    <span className={styles.ani_tit_a_span}>VIEW MORE</span>
-                  </a>
-                </div>
-              </div>
-              <div className={`${styles.css_contWrap_css_row1_center} cube`}>
-                <div className={styles.ani_cont}>
-                  <iframe
-                    className={styles.ani_cont_iframe}
-                    src="../projects/ani/3dcube.html"
-                    frameBorder="0"
-                    scrolling="no"
-                  ></iframe>
-                </div>
-                <div className="ani-tit">
-                  <div className={styles.tit_top}>
-                    <span className={styles.ani_tit_num}>02</span>
-                    <h3>3D CUBE ANIMATION</h3>
+                  <div className="ani-tit">
+                    <div className={styles.tit_top}>
+                      <span className={styles.ani_tit_num}>
+                        {id < 10 ? `0${id}` : id}
+                      </span>
+                      <h3>{title}</h3>
+                    </div>
+                    <a href="" target="_blank">
+                      <span className={styles.ani_tit_a_span}>VIEW MORE</span>
+                    </a>
                   </div>
-                  <a
-                    href="https://codepen.io/rowanna/pen/MWexjPV"
-                    target="_blank"
-                  >
-                    <span className={styles.ani_tit_a_span}>VIEW MORE</span>
-                  </a>
                 </div>
-              </div>
-              <div
-                className={`${styles.css_contWrap_css_row1_center_right} wave`}
-              >
-                <div className={styles.ani_cont}>
-                  <iframe
-                    className={styles.ani_cont_iframe}
-                    src="../projects/ani/wave.html"
-                    frameBorder="0"
-                    scrolling="no"
-                  ></iframe>
-                </div>
-                <div className="ani-tit">
-                  <div className={styles.tit_top}>
-                    <span className={styles.ani_tit_num}>03</span>
-                    <h3>WAVE ANIMATION</h3>
-                  </div>
-                  <a
-                    href="https://codepen.io/rowanna/pen/mdEoOjB"
-                    target="_blank"
-                  >
-                    <span className={styles.ani_tit_a_span}>VIEW MORE</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className={styles.css_contWrap_css_row2}>
-              <div className={`${styles.css_contWrap_css_row2_left} bar`}>
-                <div className={styles.ani_cont}>
-                  <iframe
-                    className={styles.ani_cont_iframe}
-                    src="../projects/ani/bar.html"
-                    frameBorder="0"
-                    scrolling="no"
-                  ></iframe>
-                </div>
-                <div className="ani-tit">
-                  <div className={styles.tit_top}>
-                    <span className={styles.ani_tit_num}>04</span>
-                    <h3>BAR ANIMATION</h3>
-                  </div>
-                  <a
-                    href="https://codepen.io/rowanna/pen/ExyMZay"
-                    target="_blank"
-                  >
-                    <span className={styles.ani_tit_a_span}>VIEW MORE</span>
-                  </a>
-                </div>
-              </div>
-              <div className={`${styles.css_contWrap_css_row2_center} dot`}>
-                <div className={styles.ani_cont}>
-                  <iframe
-                    className={styles.ani_cont_iframe}
-                    src="../projects/ani/dot.html"
-                    frameBorder="0"
-                    scrolling="no"
-                  ></iframe>
-                </div>
-                <div className="ani-tit">
-                  <div className={styles.tit_top}>
-                    <span className={styles.ani_tit_num}>05</span>
-                    <h3>DOT ANIMATION</h3>
-                  </div>
-                  <a
-                    href="https://codepen.io/rowanna/pen/QWEoKLN"
-                    target="_blank"
-                  >
-                    <span className={styles.ani_tit_a_span}>VIEW MORE</span>
-                  </a>
-                </div>
-              </div>
-              <div className={`${styles.css_contWrap_css_row2_right} infin`}>
+              ))}
+
+              <div className={`${styles.css_contWrap_css_row2_right}`}>
                 <div
                   className={`${styles.ani_cont} ${styles.infin_ani_comingWrap}`}
                 >
