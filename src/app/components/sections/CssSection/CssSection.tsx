@@ -48,7 +48,7 @@ export default function CssSection() {
                       </span>
                       <h3>{title}</h3>
                     </div>
-                    <a href="" target="_blank">
+                    <a href={descURL} target="_blank">
                       <span className={styles.ani_tit_a_span}>VIEW MORE</span>
                     </a>
                   </div>
